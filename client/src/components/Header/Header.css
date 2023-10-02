@@ -1,0 +1,83 @@
+.flex-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    background: linear-gradient(to right, rgb(0, 196, 204), rgb(125, 42, 232));
+}
+
+.nav-block {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-block-left {
+    margin-left: 8px;
+}
+
+.nav-block-right {
+    display: flex;
+}
+
+.span-block {
+    padding-inline: 8px;
+}
+
+.vertical-bar {
+    display: block;
+    width: 0.5px;
+    background-color: rgba(255,255,255,0.2);
+    height: 35px;
+}
+
+.document-title-input {
+    background: none;
+    outline: none;
+    border: none;
+    color: rgba(255,255,255,0.9);
+    border-radius: 4px;
+    height: 100%;
+    cursor: pointer;
+    padding-inline: 8px;
+    padding-block: 10px;
+}
+
+.document-title-input::placeholder {
+    background: none;
+    outline: none;
+    border: none;
+    color: rgba(255,255,255,0.5)
+}
+
+.document-title-input:hover {
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.document-title-input:focus {
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.dp-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 100vmax;
+    background-image: url('../../assets/David-Cropped.jpg');
+    background-size: contain;
+    display: block;
+}
+
+@media(max-width: 1200px) {
+    .document-title-input {
+        display: none;
+    }
+}
+
+@media(max-width: 900px) {
+    .nav-block {
+        padding: 4px;
+    }
+}

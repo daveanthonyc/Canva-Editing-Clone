@@ -1,0 +1,43 @@
+/* smaller widths */
+
+.homeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.homeButton:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.homeButton-house {
+    visibility: visible;
+}
+
+.homeButton-arrow {
+    display: none;
+}
+
+.homeButton span {
+    display: none;
+    padding-inline: 8px;
+}
+
+/* largerwidth */
+@media(min-width: 900px) {
+    .homeButton-house {
+        display: none;
+    }
+
+    .homeButton-arrow {
+        display: block;
+    }
+    
+    .homeButton span {
+        display: block;
+    }
+}
