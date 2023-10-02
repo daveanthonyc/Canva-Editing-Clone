@@ -45,9 +45,30 @@
     isolation: isolate;
   }
 
-  body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 0.85rem;
-    letter-spacing: 0.2px;
-  }
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.2px;
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+}
+
+.content-wrapper {
+  height: 100%;
+  display: flex;
+}
+
+.app-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  min-height: 100%;
+}
+
+.main-design-wrapper {
+  width: 100%;
+}

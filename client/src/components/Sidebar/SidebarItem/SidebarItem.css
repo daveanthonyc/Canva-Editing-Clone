@@ -1,0 +1,19 @@
+.SidebarItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.6rem;
+    cursor: pointer;
+    transition: color ease-in-out 100ms;
+}
+
+.SidebarItem:hover {
+    color: white;
+}
+
+.SidebarItem svg {
+    width: 25px;
+}

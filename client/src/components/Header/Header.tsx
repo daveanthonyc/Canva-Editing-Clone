@@ -1,7 +1,6 @@
 import './Header.css'
 import './HomeButton/HomeButton'
 import './NavItem/NavItem'
-import Tooltip from '../Tooltip/Tooltip'
 import HomeButton from './HomeButton/HomeButton';
 import NavItem from './NavItem/NavItem';
 import UploadButton from './UploadButton/UploadButton';
@@ -30,12 +29,12 @@ function Header() {
                     </svg>
                 </NavItem>
             </div>
+
             <div className='nav-block-right nav-block'>
                 <form action="">
                     <input type="text" className='document-title-input' placeholder='Untitled Design - Logo'/>
                 </form>
-                <div className='dp-container'>
-                </div>
+                <div className='dp-container'></div>
                 <UploadButton />
             </div>
         </nav>

@@ -37,7 +37,7 @@
 .document-title-input {
     background: none;
     outline: none;
-    border: none;
+    border: 1px solid rgba(0,0,0,0);
     color: rgba(255,255,255,0.9);
     border-radius: 4px;
     height: 100%;
@@ -70,7 +70,7 @@
     display: block;
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 900px) {
     .document-title-input {
         display: none;
     }

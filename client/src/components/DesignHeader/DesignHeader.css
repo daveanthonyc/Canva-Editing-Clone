@@ -1,0 +1,11 @@
+.main-design-header {
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 8px;
+}

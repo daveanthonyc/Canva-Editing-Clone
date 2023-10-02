@@ -1,0 +1,41 @@
+.side-bar {
+    background-color: #15171b;
+    width: min-content;
+    height: 100%;
+    display: flex;
+    z-index: 999;
+}
+
+.test-button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 421px;
+    cursor: pointer;
+}
+
+.tab-list {
+    width: 4.5rem;
+}
+
+.test {
+    position: relative;
+    width: 350px;
+    background-color: #252627;
+    height: 100%;
+}
+
+.test-svg {
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.flex-horz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

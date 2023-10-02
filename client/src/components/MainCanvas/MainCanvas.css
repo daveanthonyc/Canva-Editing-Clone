@@ -1,0 +1,12 @@
+.main-canvas {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: relative;
+    top: -50px;
+    box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.05);
+}
+
+.main-canvas:hover {
+    border: 2px solid #8b3dff
+}
