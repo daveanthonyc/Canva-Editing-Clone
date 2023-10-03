@@ -1,0 +1,17 @@
+.menu-button {
+    width: 100%;
+    padding-block: 1em;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color .15s ease-in-out;
+    background-color: #34343a;
+    color: white;
+    text-align: left;
+    padding-inline: 1rem;
+}
+
+.menu-button:hover {
+    background-color: #4e4e52;
+}

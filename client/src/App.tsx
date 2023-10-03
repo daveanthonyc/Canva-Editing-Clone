@@ -6,18 +6,19 @@ import MainCanvas from "./components/MainCanvas/MainCanvas"
 
 function App() {
   return (
-    <div className="app-container">
-      <Header></Header>
-      <div className="content-wrapper">
-        <Sidebar></Sidebar>
-        <div className="main-design-wrapper">
-          <DesignHeader></DesignHeader>
-          <MainDesignSpace>
-            <MainCanvas />
-          </MainDesignSpace>
+      <div className="app-container">
+        <Header></Header>
+        <div className="content-wrapper">
+          <Sidebar></Sidebar>
+          <div className="main-design-wrapper">
+            <DesignHeader></DesignHeader>
+            <MainDesignSpace>
+              <MainCanvas />
+            </MainDesignSpace>
+          </div>
         </div>
       </div>
-    </div>
+    
   )
 }
 

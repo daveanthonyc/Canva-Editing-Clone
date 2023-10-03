@@ -1,0 +1,24 @@
+.text-view-comp {
+    display: grid;
+    gap: 16px;
+    opacity: 0%;
+    transform: translateY(-10px);
+    animation: fadeIn 0.4s forwards ease;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with fully transparent */
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1; /* End with fully opaque */
+      transform: translateY(-0px);
+    }
+  }
+
+
+.grid-gap {
+    display: grid;
+    gap: 8px;
+}

@@ -1,0 +1,15 @@
+.custom-button {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color .15s ease-in-out;
+    background-color: #8b3dff;
+    color: white;
+}
+
+.custom-button:hover {
+    background-color: #5a17be;
+}

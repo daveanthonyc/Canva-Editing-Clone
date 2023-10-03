@@ -42,8 +42,9 @@
     border-radius: 4px;
     height: 100%;
     cursor: pointer;
-    padding-inline: 8px;
+    padding-inline: 10px;
     padding-block: 10px;
+    text-align: right;
 }
 
 .document-title-input::placeholder {

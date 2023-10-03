@@ -4,8 +4,21 @@ import './NavItem/NavItem'
 import HomeButton from './HomeButton/HomeButton';
 import NavItem from './NavItem/NavItem';
 import UploadButton from './UploadButton/UploadButton';
+import { useState } from 'react';
 
 function Header() {
+    // const [designTitle, setDesignTitle] = useState<string>("")
+    const  [titleInput, setTitleInput] = useState<string>("Untitled Design - Logo")
+
+    const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        document.title = titleInput || "Untitled Design - Logo"
+    }
+
+    const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setTitleInput(e.target.value)
+    }
+
     return ( <header className='main-header'>
         <nav className="main-nav flex-horizontal">
             <div className='nav-block-left nav-block'>
@@ -31,8 +44,8 @@ function Header() {
             </div>
 
             <div className='nav-block-right nav-block'>
-                <form action="">
-                    <input type="text" className='document-title-input' placeholder='Untitled Design - Logo'/>
+                <form action="" onSubmit={submitHandler}>
+                    <input type="text" className='document-title-input' spellCheck='false' placeholder='Untitled Design - Logo' onChange={onChangeHandler}/>
                 </form>
                 <div className='dp-container'></div>
                 <UploadButton />

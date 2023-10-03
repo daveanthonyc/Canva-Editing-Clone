@@ -26,7 +26,11 @@
     width: 350px;
     background-color: #252627;
     height: 100%;
+    padding-inline: 16px;
+    padding-top: 16px;
+    color: rgb(226, 226, 226);
 }
+
 
 .test-svg {
     color: white;
