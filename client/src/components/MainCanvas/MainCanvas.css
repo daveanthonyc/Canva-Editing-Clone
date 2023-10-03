@@ -8,5 +8,5 @@
 }
 
 .main-canvas:hover {
-    border: 2px solid #8b3dff
+    outline: 2px solid #8b3dff
 }
