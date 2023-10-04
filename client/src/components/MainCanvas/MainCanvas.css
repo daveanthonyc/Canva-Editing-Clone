@@ -5,8 +5,9 @@
     position: relative;
     top: -50px;
     box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.05);
+    overflow: hidden;
 }
 
 .main-canvas:hover {
-    outline: 2px solid #8b3dff
+    /* outline: 2px solid #8b3dff */
 }

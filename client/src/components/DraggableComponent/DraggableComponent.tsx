@@ -1,15 +1,22 @@
 import { ReactNode, useEffect, useState, useRef } from 'react';
 import './DraggableComponent.css'
 
-function DraggableComponent({ children } : { children: ReactNode }) {
+function DraggableComponent({ children, canvasRef } : { children: ReactNode, canvasRef: React.HTMLDivElement}) {
     const [mouseX, setMouseX] = useState<number>(100);
     const [mouseY, setMouseY] = useState<number>(100);
     const [isDraggable, setIsDraggable ] = useState<boolean>(false)
     const [isSelected, setIsSelected] = useState<boolean>(false)
-    const draggableComponentRef = useRef(null)
+    const draggableComponentRef = useRef<HTMLDivElement | null>(null)
 
     useEffect(() => {
         window.addEventListener('mousemove', mouseMoveHandler)
+
+        // attempting to make isselected false when click outside of the div
+        window.addEventListener('click', (e) => {
+            // if (e.target === draggableComponentRef) {
+
+            // }
+        })
 
         window.addEventListener('mouseup', () => {
             removeEventListener('mousemove', mouseMoveHandler)
@@ -21,10 +28,11 @@ function DraggableComponent({ children } : { children: ReactNode }) {
     }, [isDraggable])
 
     const mouseMoveHandler = (e: MouseEvent) => {
+        const test = canvasRef.current.getBoundingClientRect()
         if (isDraggable) {
             e.preventDefault();
-            setMouseX(e.clientX)
-            setMouseY(e.clientY)
+            setMouseX((e.clientX - test.x - 50))
+            setMouseY((e.clientY - test.y - 50))
         }
     }
 
@@ -33,7 +41,6 @@ function DraggableComponent({ children } : { children: ReactNode }) {
         setIsSelected(true)
     }
 
-
     const styles = {
         left: mouseX,
         top: mouseY
@@ -41,6 +48,10 @@ function DraggableComponent({ children } : { children: ReactNode }) {
 
     return ( <div style={styles} ref={draggableComponentRef} className='draggable-component' onMouseDownCapture={mouseDownHandler} onMouseUp={() => setIsDraggable(false)}>
         {children}
+        {isSelected && <div className='post-tl post'></div>}
+        {isSelected && <div className='post-tr post'></div>}
+        {isSelected && <div className='post-bl post'></div>}
+        {isSelected && <div className='post-br post'></div>}
     </div> );
 }
 
