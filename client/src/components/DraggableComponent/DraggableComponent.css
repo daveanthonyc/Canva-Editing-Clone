@@ -4,7 +4,13 @@
     padding: 10px;
     position: absolute;
     user-select: none;
+    cursor: default ;
 }
+
+.draggable-component[data-state="true"] {
+    cursor: move;
+}
+
 
 .draggable-component:hover {
     outline: 2px solid #8b3dff

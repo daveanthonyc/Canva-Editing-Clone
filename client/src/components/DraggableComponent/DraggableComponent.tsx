@@ -43,10 +43,10 @@ function DraggableComponent({ children, canvasRef } : { children: ReactNode, can
 
     const styles = {
         left: mouseX,
-        top: mouseY
+        top: mouseY,
     }
 
-    return ( <div style={styles} ref={draggableComponentRef} className='draggable-component' onMouseDownCapture={mouseDownHandler} onMouseUp={() => setIsDraggable(false)}>
+    return ( <div style={styles} data-state={isDraggable} ref={draggableComponentRef} className='draggable-component' onMouseDownCapture={mouseDownHandler} onMouseUp={() => setIsDraggable(false)}>
         {children}
         {isSelected && <div className='post-tl post'></div>}
         {isSelected && <div className='post-tr post'></div>}
