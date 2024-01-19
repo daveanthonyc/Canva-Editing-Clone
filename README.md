@@ -5,7 +5,7 @@ A MERN stack clone of Canva's main editing software.
 This project is still in the early stages and the frontend and backend are not connected yet. The frontend only has limited features of draggable editable text objects and also a sidebar that extends out.
 
 ## Project Screen Shots
-![Main](https://ibb.co/jrK3ZK6) 
+![Main](https://i.ibb.co/rwP5fP7/canvaclonemock.png) 
 
 ## Installation and Setup Instructions
 Clone this repository. You will need `node` and `npm` installed globally on your machine.  
